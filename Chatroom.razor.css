@@ -1,0 +1,157 @@
+/* Corpo geral - Fundo dark com toque metálico */
+body {
+    background-color: #000;
+    color: #e6e6e6;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Título principal */
+h1 {
+    text-align: left;
+    color: #1D9BF0;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    text-shadow: 0 0 20px #1D9BF0;
+}
+
+/* Caixa de entrada do nome */
+input[type="text"] {
+    background-color: #1a1a1a;
+    border: 2px solid #1D9BF0;
+    color: #e6e6e6;
+    border-radius: 30px;
+    padding: 6px 10px; /* 🔥 Menor e mais discreta */
+    width: 50%; /* 🔥 Reduzida para ficar menor */
+    margin-bottom: 10px;
+    box-shadow: 0 0 8px rgba(29, 155, 240, 0.3);
+}
+
+/* Botões principais */
+button {
+    background-color: #1D9BF0;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+    box-shadow: 0 0 12px rgba(29, 155, 240, 0.4);
+}
+
+button:hover {
+    background-color: #0d8ee5;
+    transform: scale(1.05);
+}
+
+/* Caixa de chat */
+#scrollbox {
+    background-color: #1a1a1a;
+    border: 2px solid #1D9BF0;
+    border-radius: 12px;
+    padding: 20px;
+    height: 400px;
+    overflow-y: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+/* Mensagens gerais */
+.message-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 15px; 
+    padding: 10px;
+    background-color: #111827;
+    border-radius: 12px;
+    border: 1px solid #1D9BF0;
+    box-shadow: 0 2px 8px rgba(29, 155, 240, 0.2);
+}
+
+/* Nome do usuário */
+.user {
+    font-weight: bold;
+    color: #1D9BF0;
+    text-shadow: 0 0 8px #1D9BF0;
+}
+
+/* Mensagens enviadas pelo próprio usuário */
+.sent {
+    background-color: #1b2838;
+    color: #1D9BF0;
+    border-left: 4px solid #1D9BF0;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 70%;
+}
+
+/* Mensagens recebidas de outros usuários */
+.received {
+    background-color: #19212e;
+    color: #80caff;
+    border-left: 4px solid #80caff;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 70%;
+}
+
+/* 🔥 Notificações no chat - [Notice] */
+.alert-notice {
+    background-color: #fff;   /* 🔥 Fundo branco */
+    color: #000;              /* 🔥 Texto preto */
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    padding: 5px 10px;        /* 🔥 Mais pequeno e discreto */
+    font-size: 12px;          /* 🔥 Fonte reduzida */
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Área de envio de mensagens */
+textarea.input-lg {
+    background-color: #1a1a1a;
+    border: 2px solid #1D9BF0;
+    color: #e6e6e6;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    height: 80px;
+    resize: none;
+    margin-top: 10px;
+}
+
+/* Botão de enviar mensagem */
+.btn-default {
+    background-color: #1D9BF0;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 8px 20px;
+    margin-top: 10px;
+    box-shadow: 0 4px 15px rgba(29, 155, 240, 0.4);
+}
+
+.btn-default:hover {
+    background-color: #0d8ee5;
+    transform: scale(1.05);
+}
+
+/* Banner de status */
+.alert-secondary {
+    background-color: #0e1725;
+    color: #1D9BF0;
+    border: 2px solid #1D9BF0;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: left;
+    box-shadow: 0 0 15px rgba(29, 155, 240, 0.4);
+}
+
+/* Linha separadora */
+.divider {
+    width: 100%;            /* Ocupa toda a largura */
+    height: 1px;            /* Espessura fina */
+    opacity: 0;           /* Transparente para ser mais suave */
+    margin: 10px 0;         /* Espaçamento vertical para destacar as mensagens */
+}
+

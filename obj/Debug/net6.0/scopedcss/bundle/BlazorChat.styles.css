@@ -1,0 +1,292 @@
+/* _content/BlazorChat/Chatroom.razor.rz.scp.css */
+/* Corpo geral - Fundo dark com toque metálico */
+body[b-z82f7y4cj3] {
+    background-color: #000;
+    color: #e6e6e6;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Título principal */
+h1[b-z82f7y4cj3] {
+    text-align: left;
+    color: #1D9BF0;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    text-shadow: 0 0 20px #1D9BF0;
+}
+
+/* Caixa de entrada do nome */
+input[type="text"][b-z82f7y4cj3] {
+    background-color: #1a1a1a;
+    border: 2px solid #1D9BF0;
+    color: #e6e6e6;
+    border-radius: 30px;
+    padding: 6px 10px; /* 🔥 Menor e mais discreta */
+    width: 50%; /* 🔥 Reduzida para ficar menor */
+    margin-bottom: 10px;
+    box-shadow: 0 0 8px rgba(29, 155, 240, 0.3);
+}
+
+/* Botões principais */
+button[b-z82f7y4cj3] {
+    background-color: #1D9BF0;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+    box-shadow: 0 0 12px rgba(29, 155, 240, 0.4);
+}
+
+button:hover[b-z82f7y4cj3] {
+    background-color: #0d8ee5;
+    transform: scale(1.05);
+}
+
+/* Caixa de chat */
+#scrollbox[b-z82f7y4cj3] {
+    background-color: #1a1a1a;
+    border: 2px solid #1D9BF0;
+    border-radius: 12px;
+    padding: 20px;
+    height: 400px;
+    overflow-y: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+/* Mensagens gerais */
+.message-container[b-z82f7y4cj3] {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 15px; 
+    padding: 10px;
+    background-color: #111827;
+    border-radius: 12px;
+    border: 1px solid #1D9BF0;
+    box-shadow: 0 2px 8px rgba(29, 155, 240, 0.2);
+}
+
+/* Nome do usuário */
+.user[b-z82f7y4cj3] {
+    font-weight: bold;
+    color: #1D9BF0;
+    text-shadow: 0 0 8px #1D9BF0;
+}
+
+/* Mensagens enviadas pelo próprio usuário */
+.sent[b-z82f7y4cj3] {
+    background-color: #1b2838;
+    color: #1D9BF0;
+    border-left: 4px solid #1D9BF0;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 70%;
+}
+
+/* Mensagens recebidas de outros usuários */
+.received[b-z82f7y4cj3] {
+    background-color: #19212e;
+    color: #80caff;
+    border-left: 4px solid #80caff;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 70%;
+}
+
+/* 🔥 Notificações no chat - [Notice] */
+.alert-notice[b-z82f7y4cj3] {
+    background-color: #fff;   /* 🔥 Fundo branco */
+    color: #000;              /* 🔥 Texto preto */
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    padding: 5px 10px;        /* 🔥 Mais pequeno e discreto */
+    font-size: 12px;          /* 🔥 Fonte reduzida */
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Área de envio de mensagens */
+textarea.input-lg[b-z82f7y4cj3] {
+    background-color: #1a1a1a;
+    border: 2px solid #1D9BF0;
+    color: #e6e6e6;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    height: 80px;
+    resize: none;
+    margin-top: 10px;
+}
+
+/* Botão de enviar mensagem */
+.btn-default[b-z82f7y4cj3] {
+    background-color: #1D9BF0;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 8px 20px;
+    margin-top: 10px;
+    box-shadow: 0 4px 15px rgba(29, 155, 240, 0.4);
+}
+
+.btn-default:hover[b-z82f7y4cj3] {
+    background-color: #0d8ee5;
+    transform: scale(1.05);
+}
+
+/* Banner de status */
+.alert-secondary[b-z82f7y4cj3] {
+    background-color: #0e1725;
+    color: #1D9BF0;
+    border: 2px solid #1D9BF0;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: left;
+    box-shadow: 0 0 15px rgba(29, 155, 240, 0.4);
+}
+
+/* Linha separadora */
+.divider[b-z82f7y4cj3] {
+    width: 100%;            /* Ocupa toda a largura */
+    height: 1px;            /* Espessura fina */
+    opacity: 0;           /* Transparente para ser mais suave */
+    margin: 10px 0;         /* Espaçamento vertical para destacar as mensagens */
+}
+
+/* _content/BlazorChat/Shared/MainLayout.razor.rz.scp.css */
+.page[b-j9qjx5tf4e] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-j9qjx5tf4e] {
+    flex: 1;
+}
+
+.sidebar[b-j9qjx5tf4e] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-j9qjx5tf4e] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-j9qjx5tf4e]  a, .top-row .btn-link[b-j9qjx5tf4e] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child[b-j9qjx5tf4e] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-j9qjx5tf4e] {
+        display: none;
+    }
+
+    .top-row.auth[b-j9qjx5tf4e] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-j9qjx5tf4e], .top-row .btn-link[b-j9qjx5tf4e] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-j9qjx5tf4e] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-j9qjx5tf4e] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-j9qjx5tf4e] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row[b-j9qjx5tf4e], article[b-j9qjx5tf4e] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* _content/BlazorChat/Shared/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-qfmli3quim] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-qfmli3quim] {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-qfmli3quim] {
+    font-size: 1.1rem;
+}
+
+.oi[b-qfmli3quim] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-qfmli3quim] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-qfmli3quim] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-qfmli3quim] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-qfmli3quim]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-qfmli3quim]  a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item[b-qfmli3quim]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-qfmli3quim] {
+        display: none;
+    }
+
+    .collapse[b-qfmli3quim] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+}
